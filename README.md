@@ -1,1 +1,1 @@
-# AvitoAcademy
+# Avito Academy
