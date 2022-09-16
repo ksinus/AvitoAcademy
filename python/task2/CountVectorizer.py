@@ -33,7 +33,12 @@ class CountVectorizer:
         return self._vocabulary
 
     def _init_vocabulary(self, corpus):
-        """Build a vocabulary of terms."""
+        """Build a vocabulary of terms.
+        
+        Parameters
+        ----------
+        corpus : iterable over raw text documents, length = n_samples
+        """
         self._vocabulary = list({term.lower()
                                  for token in corpus
                                  for term in token.split()})
