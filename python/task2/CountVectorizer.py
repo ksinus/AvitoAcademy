@@ -16,10 +16,10 @@ class CountVectorizer:
         """
         self._init_vocabulary(corpus)
         term_matrix = [[]] * len(corpus)
-        for i, text in enumerate(corpus):
-            list_term = [word.lower() for word in text.split()]
-            term_matrix[i] = [list_term.count(word)
-                              for word in self._vocabulary]
+        for i, token in enumerate(corpus):
+            list_term = [term.lower() for term in token.split()]
+            term_matrix[i] = [list_term.count(term)
+                              for term in self._vocabulary]
         return term_matrix
 
     def get_feature_names(self):
@@ -28,7 +28,7 @@ class CountVectorizer:
         Returns
         -------
         feature_names : list
-            A list of feature names.
+                        A list of feature names.
         """
         return self._vocabulary
 
