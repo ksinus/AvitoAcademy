@@ -1,4 +1,5 @@
 import unittest
+
 from CountVectorizer import CountVectorizer
 
 
