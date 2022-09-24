@@ -17,7 +17,7 @@ class JsonToObj:
 
 
 class ColorizeMixin:
-    """ Mixin class for changing color """
+    """ Mixin class for changing repr color """
 
     def __init__(self, color_code=35):
         self.repr_color_code = color_code
