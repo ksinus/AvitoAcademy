@@ -19,7 +19,7 @@ class JsonToObj:
 class ColorizeMixin:
     """ Mixin class for changing repr color """
 
-    def __init__(self, color_code=35) -> None:
+    def __init__(self, color_code=33) -> None:
         self.repr_color_code = color_code
 
     def __str__(self) -> str:
@@ -61,8 +61,8 @@ if __name__ == '__main__':
 
     lesson_str = """{
         "title": "Вельш-корги"
-    
     }"""
     lesson = json.loads(lesson_str)
     lesson_ad = Advert(lesson)
+    print(lesson_ad)
     print(lesson_ad.repr_color_code)
