@@ -1,0 +1,9 @@
+test_empty (unit_test.MyTestCase) ... ok
+test_repeat (unit_test.MyTestCase) ... ok
+test_repeats (unit_test.MyTestCase) ... ok
+test_simple_sequence (unit_test.MyTestCase) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK

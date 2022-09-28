@@ -1,0 +1,37 @@
+Trying:
+    decode('.-.. --- .-. . --   .. .--. ... ..- --   -.. ')
+Expecting:
+    'LOREMIPSUMD'
+ok
+Trying:
+    decode('A')  # doctest: +ELLIPSIS
+Expecting:
+    Traceback (most recent call last):
+    ...
+    KeyError: 'A'
+ok
+Trying:
+    encode('SOS')
+Expecting:
+    '... --- ...'
+ok
+Trying:
+    encode('ABCDEFGHIJKLMN')
+Expecting:
+     '.- -... -.-. -.. . ..-. --. .... .. .--- -.- .-.. -- -.'
+ok
+Trying:
+    encode('sample message') # doctest: +ELLIPSIS
+Expecting:
+    Traceback (most recent call last):
+        ...
+    KeyError: 's'
+ok
+1 items had no tests:
+    morse
+2 items passed all tests:
+   2 tests in morse.decode
+   3 tests in morse.encode
+5 tests in 3 items.
+5 passed and 0 failed.
+Test passed.
