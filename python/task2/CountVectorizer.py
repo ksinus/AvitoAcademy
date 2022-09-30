@@ -34,7 +34,7 @@ class CountVectorizer:
 
     def _init_vocabulary(self, corpus):
         """Build a vocabulary of terms.
-        
+
         Parameters
         ----------
         corpus : iterable over raw text documents, length = n_samples
