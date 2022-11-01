@@ -57,7 +57,7 @@ function rowComparator(rowA, rowB, column = 0) {
 
 function sortColumn(th) {
     // Get the current sorting direction of the selected header,
-    // clear state on other headers and then set the new sorting direction
+    // clear state on other headers and then arr the new sorting direction
     const currentSortOrder = th.getAttribute("aria-sort");
     [...th.parentElement.cells].forEach(header => header.setAttribute("aria-sort", "none"));
     if (currentSortOrder === "none") {
